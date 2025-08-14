@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Tasks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>✅ Mini Tasks</h1>
+      <button id="themeToggle" aria-label="Cambiar tema">🌓</button>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <form id="taskForm" class="task-form" autocomplete="off">
+          <input
+            id="taskInput"
+            type="text"
+            placeholder="Escribe una tarea y presiona Enter…"
+            required
+          />
+          <button type="submit" class="primary">Agregar</button>
+        </form>
+
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
+        <div class="actions">
+          <button id="clearDone" class="ghost">Limpiar completadas</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Hecho con ♥ en HTML, CSS y JS.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
